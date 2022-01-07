@@ -1,1 +1,3 @@
-# TR595
+# TR-595 Tricorder Project
+
+This project is my attempt to build a customized version of the Voyager Mk IX/X Tricorder. The project will consist of a 3D printed housing and will utilize an LCD display and custom electronics driven by a Raspberry Pi Pico. All designs and code will be freely available in this repository. For more information, see the developmnent thread on the RPF: https://www.therpf.com/forums/threads/tr-595e-custom-tricorder.342650/

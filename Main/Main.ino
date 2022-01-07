@@ -12,7 +12,12 @@ TFT_eSPI tft = TFT_eSPI(); // Invoke custom library
 
 void setup() {
   
+  // Initialize TFT
   TFTSetup();
+
+  // Clear the screen
+  tft.fillScreen(TFT_BLACK);
+  
   DrawBackgroundImage(lcars);
 }
 
