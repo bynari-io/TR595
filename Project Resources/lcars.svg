@@ -9,6 +9,9 @@
    id="SVGRoot"
    sodipodi:docname="lcars.svg"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:export-filename="C:\Users\Nick\Desktop\lcars.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -25,8 +28,8 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="2.8284271"
-     inkscape:cx="134.17351"
-     inkscape:cy="109.42477"
+     inkscape:cx="133.64318"
+     inkscape:cy="109.07122"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
@@ -217,42 +220,6 @@
        style="fill:#ff9900;fill-opacity:1;stroke:#3366cc;stroke-width:0"
        d="m 69.000011,119.28361 h 4.92187 v 2.34375 h -4.92187 z"
        id="path21376-8-8-4-0" />
-    <path
-       style="display:inline;fill:#3366cc;fill-opacity:1;stroke:#3366cc;stroke-width:0"
-       d="m 100.21199,116.88405 h 19.18999 v 7.08135 h -19.18999 z"
-       id="path21376-8-8-4-0-35-2" />
-    <path
-       style="display:inline;fill:#99ccff;fill-opacity:1;stroke:#3366cc;stroke-width:0"
-       d="m 120.40199,116.88405 h 19.18999 v 7.08135 h -19.18999 z"
-       id="path21376-8-8-4-0-35-2-5" />
-    <path
-       style="display:inline;fill:#3366cc;fill-opacity:1;stroke:#3366cc;stroke-width:0"
-       d="m 140.59199,116.88405 h 19.18999 v 7.08135 h -19.18999 z"
-       id="path21376-8-8-4-0-35-2-6" />
-    <path
-       style="display:inline;fill:#5599ff;fill-opacity:1;stroke:#3366cc;stroke-width:0"
-       d="m 160.78199,116.88405 h 19.19 v 7.08135 h -19.19 z"
-       id="path21376-8-8-4-0-35-7" />
-    <path
-       style="display:inline;fill:#99ccff;fill-opacity:1;stroke:#3366cc;stroke-width:0"
-       d="m 180.97198,116.88405 h 19.18999 v 7.08135 h -19.18999 z"
-       id="path21376-8-8-4-0-35-2-0" />
-    <path
-       style="display:inline;fill:#99ccff;fill-opacity:1;stroke:#3366cc;stroke-width:0"
-       d="m 201.16198,116.88405 h 19.18999 v 7.08135 h -19.18999 z"
-       id="path21376-8-8-4-0-35-2-5-1" />
-    <path
-       style="display:inline;fill:#3366cc;fill-opacity:1;stroke:#3366cc;stroke-width:0"
-       d="m 221.35198,116.88405 h 19.18999 v 7.08135 h -19.18999 z"
-       id="path21376-8-8-4-0-35-2-6-3" />
-    <path
-       style="display:inline;fill:#3366ff;fill-opacity:1;stroke:#3366cc;stroke-width:0"
-       d="m 241.54199,116.88405 h 19.19 v 7.08135 h -19.19 z"
-       id="path21376-8-8-4-0-35-0" />
-    <path
-       style="display:inline;fill:#3366cc;fill-opacity:1;stroke:#3366cc;stroke-width:0"
-       d="m 261.73198,116.88405 h 19.18999 v 7.08135 h -19.18999 z"
-       id="path21376-8-8-4-0-35-2-9" />
     <path
        style="fill:#ff9900;fill-opacity:1;stroke:#3366cc;stroke-width:0"
        d="m 69.000011,123.62761 h 4.92187 v 2.34375 h -4.92187 z"
