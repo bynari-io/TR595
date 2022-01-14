@@ -3,7 +3,7 @@
 #include "tr595.h"
 
 // Assets
-#include "lcars.h"
+#include "defaultmode.h"
 
 //TFT_eSPI instance
 TFT_eSPI tft = TFT_eSPI();
