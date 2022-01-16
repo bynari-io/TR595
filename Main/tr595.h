@@ -7,9 +7,9 @@ class Anim {
     int minX, maxX, minY, maxY;
     int currentX, currentY, oldX, oldY;
     bool reverse = false;
-    bool visible = true;
     unsigned long previousMillis = 0;
     int interval;
+    int blinkDelay;
     
   
 };
