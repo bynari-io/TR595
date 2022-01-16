@@ -13,15 +13,17 @@ const int DISPLAY_WIDTH = 320;
 const int DISPLAY_HEIGHT = 240;
 
 // Sprites
-TFT_eSprite dm_spr_scannerBarL = TFT_eSprite(&tft);
-TFT_eSprite dm_bg_scannerBarL = TFT_eSprite(&tft);
-TFT_eSprite dm_spr_scannerBarR = TFT_eSprite(&tft);
-TFT_eSprite dm_bg_scannerBarR = TFT_eSprite(&tft);
 
+TFT_eSprite dm_spr_frameTop = TFT_eSprite(&tft);
+TFT_eSprite dm_bg_frameTop = TFT_eSprite(&tft);
+TFT_eSprite dm_spr_frameBottom = TFT_eSprite(&tft);
+TFT_eSprite dm_bg_frameBottom = TFT_eSprite(&tft);
 
 // Animation Elements
-Anim dm_scannerBarL;
-Anim dm_scannerBarR;
+
+// **Default Mode** //
+Anim dm_frameTop;
+Anim dm_frameBottom;
 
 // Variables
 unsigned long currentMillis = 0;
@@ -58,11 +60,11 @@ void TFTSetup(){
   
 }
 
-void DrawBackgroundImage(const unsigned short IMAGE[]) {
+void DrawBackgroundImage(int x, int y, const unsigned short IMAGE[]) {
 
   // Clear screen & draw background image
   tft.fillScreen(TFT_BLACK);
-  tft.pushImage(0,0, DISPLAY_WIDTH, DISPLAY_HEIGHT, IMAGE);
+  tft.pushImage(x, y, DISPLAY_WIDTH, DISPLAY_HEIGHT, IMAGE);
       
 }
 
@@ -83,108 +85,115 @@ void BlinkLED() {
 
 void DM_InitializeAttributes(){
 
-// Left Scanner Bar
-dm_scannerBarL.sizeX = 5;
-dm_scannerBarL.sizeY = 10;
-dm_scannerBarL.minY = 50;
-dm_scannerBarL.maxY = 180;
-dm_scannerBarL.currentX = 80;
-dm_scannerBarL.currentY = dm_scannerBarL.minY;
-dm_scannerBarL.oldX = dm_scannerBarL.currentX;
-dm_scannerBarL.oldY = dm_scannerBarL.minY;
-dm_scannerBarL.reverse = false;
-dm_scannerBarL.interval = 10;
+// Frame Top
+dm_frameTop.sizeX = 8;
+dm_frameTop.sizeY = 5;
+dm_frameTop.minX = 136;
+dm_frameTop.minY = 59;
+dm_frameTop.maxX = 173;
+dm_frameTop.maxY = 59;
+dm_frameTop.currentX = dm_frameTop.maxX;
+dm_frameTop.currentY = dm_frameTop.minY;
+dm_frameTop.oldX = dm_frameTop.currentX;
+dm_frameTop.oldY = dm_frameTop.currentY;
+dm_frameTop.reverse = true;
+dm_frameTop.interval = 20;
 
-// Right Scanner Bar
-dm_scannerBarR.sizeX = 5;
-dm_scannerBarR.sizeY = 10;
-dm_scannerBarR.minY = 50;
-dm_scannerBarR.maxY = 180;
-dm_scannerBarR.currentX = 297;
-dm_scannerBarR.currentY = dm_scannerBarR.maxY;
-dm_scannerBarR.oldX = dm_scannerBarR.currentX;
-dm_scannerBarR.oldY = dm_scannerBarR.minY;
-dm_scannerBarR.reverse = true;
-dm_scannerBarR.interval = 10;
+// Frame Bottom
+dm_frameBottom.sizeX = 8;
+dm_frameBottom.sizeY = 5;
+dm_frameBottom.minX = 136;
+dm_frameBottom.minY = 230;
+dm_frameBottom.maxX = 173;
+dm_frameBottom.maxY = 230;
+dm_frameBottom.currentX = dm_frameBottom.minX;
+dm_frameBottom.currentY = dm_frameBottom.minY;
+dm_frameBottom.oldX = dm_frameBottom.currentX;
+dm_frameBottom.oldY = dm_frameBottom.currentY;
+dm_frameBottom.reverse = false;
+dm_frameBottom.interval = 20;
 
 }
 
 // Begin Default Mode Loop
 void DM_Loop(){
 
-  DrawBackgroundImage(defaultMode);
+  DrawBackgroundImage(0, 0, defaultMode);
 
   while(true){
 
     currentMillis = millis();
-    DM_Ele_ScannerBarL();
-    DM_Ele_ScannerBarR();
+    DM_FrameTop();
+    DM_FrameBottom();
     
   }
    
 }
 
+// Frame Top
+void DM_FrameTop() {
 
-// Left Scanner Bar
-void DM_Ele_ScannerBarL(){
+  if (CheckTime(currentMillis, dm_frameTop.previousMillis, dm_frameTop.interval)) {
 
-  if ((currentMillis - dm_scannerBarL.previousMillis) > dm_scannerBarL.interval){
+    // Draw background sprite to erase previous drawing
+    dm_bg_frameTop.createSprite(dm_frameTop.sizeX, dm_frameTop.sizeY);
+    dm_bg_frameTop.fillSprite(TFT_BLACK);
+    dm_bg_frameTop.pushSprite(dm_frameTop.oldX, dm_frameTop.oldY);
+    dm_bg_frameTop.deleteSprite();
 
-    dm_bg_scannerBarL.createSprite(dm_scannerBarL.sizeX, dm_scannerBarL.sizeY);
-    dm_bg_scannerBarL.fillSprite(TFT_BLACK);
-    dm_bg_scannerBarL.pushSprite(dm_scannerBarL.oldX, dm_scannerBarL.oldY);
-    dm_bg_scannerBarL.deleteSprite();
-  
-    dm_spr_scannerBarL.createSprite(dm_scannerBarL.sizeX, dm_scannerBarL.sizeY);
-    dm_spr_scannerBarL.fillSprite(TFT_RED);
-    dm_spr_scannerBarL.pushSprite(dm_scannerBarL.currentX, dm_scannerBarL.currentY);
-    dm_spr_scannerBarL.deleteSprite();
-    dm_scannerBarL.oldY = dm_scannerBarL.currentY;
-  
-    if (!dm_scannerBarL.reverse){ 
-    dm_scannerBarL.currentY++;  
+    // Draw sprite at new location
+    dm_spr_frameTop.createSprite(dm_frameTop.sizeX, dm_frameTop.sizeY);
+    dm_spr_frameTop.fillSprite(TFT_RED);
+    dm_spr_frameTop.pushSprite(dm_frameTop.currentX, dm_frameTop.currentY);
+    dm_spr_frameTop.deleteSprite();
+
+    dm_frameTop.oldX = dm_frameTop.currentX;
+
+    if (!dm_frameTop.reverse){
+      dm_frameTop.currentX++;
     }
-    
-    else {      
-      dm_scannerBarL.currentY--;   
+    else {
+      dm_frameTop.currentX--;
     }
 
-    if (dm_scannerBarL.currentY <= dm_scannerBarL.minY) { dm_scannerBarL.reverse = false; }
-    if (dm_scannerBarL.currentY >= dm_scannerBarL.maxY) { dm_scannerBarL.reverse = true; }
+    if (dm_frameTop.currentX <= dm_frameTop.minX) { dm_frameTop.reverse = false; }
+    if (dm_frameTop.currentX >= dm_frameTop.maxX) { dm_frameTop.reverse = true; }
 
-    dm_scannerBarL.previousMillis = currentMillis;
+    dm_frameTop.previousMillis = currentMillis;
     
-  }
+  }  
 }
 
-// Right Scanner Bar
-void DM_Ele_ScannerBarR(){
+// Frame Bottom
+void DM_FrameBottom() {
 
-  if ((currentMillis - dm_scannerBarR.previousMillis) > dm_scannerBarR.interval){
+  if (CheckTime(currentMillis, dm_frameBottom.previousMillis, dm_frameBottom.interval)) {
 
-    dm_bg_scannerBarR.createSprite(dm_scannerBarR.sizeX, dm_scannerBarR.sizeY);
-    dm_bg_scannerBarR.fillSprite(TFT_BLACK);
-    dm_bg_scannerBarR.pushSprite(dm_scannerBarR.oldX, dm_scannerBarR.oldY);
-    dm_bg_scannerBarR.deleteSprite();
-  
-    dm_spr_scannerBarR.createSprite(dm_scannerBarR.sizeX, dm_scannerBarR.sizeY);
-    dm_spr_scannerBarR.fillSprite(TFT_RED);
-    dm_spr_scannerBarR.pushSprite(dm_scannerBarR.currentX, dm_scannerBarR.currentY);
-    dm_spr_scannerBarR.deleteSprite();
-    dm_scannerBarR.oldY = dm_scannerBarR.currentY;
-  
-    if (!dm_scannerBarR.reverse){ 
-    dm_scannerBarR.currentY++;  
+    // Draw background sprite to erase previous drawing
+    dm_bg_frameBottom.createSprite(dm_frameBottom.sizeX, dm_frameBottom.sizeY);
+    dm_bg_frameBottom.fillSprite(TFT_BLACK);
+    dm_bg_frameBottom.pushSprite(dm_frameBottom.oldX, dm_frameBottom.oldY);
+    dm_bg_frameBottom.deleteSprite();
+
+    // Draw sprite at new location
+    dm_spr_frameBottom.createSprite(dm_frameBottom.sizeX, dm_frameBottom.sizeY);
+    dm_spr_frameBottom.fillSprite(TFT_RED);
+    dm_spr_frameBottom.pushSprite(dm_frameBottom.currentX, dm_frameBottom.currentY);
+    dm_spr_frameBottom.deleteSprite();
+
+    dm_frameBottom.oldX = dm_frameBottom.currentX;
+
+    if (!dm_frameBottom.reverse){
+      dm_frameBottom.currentX++;
     }
-    
-    else {      
-      dm_scannerBarR.currentY--;   
+    else {
+      dm_frameBottom.currentX--;
     }
 
-    if (dm_scannerBarR.currentY <= dm_scannerBarR.minY) { dm_scannerBarR.reverse = false; }
-    if (dm_scannerBarR.currentY >= dm_scannerBarR.maxY) { dm_scannerBarR.reverse = true; }
+    if (dm_frameBottom.currentX <= dm_frameBottom.minX) { dm_frameBottom.reverse = false; }
+    if (dm_frameBottom.currentX >= dm_frameBottom.maxX) { dm_frameBottom.reverse = true; }
 
-    dm_scannerBarR.previousMillis = currentMillis;
+    dm_frameBottom.previousMillis = currentMillis;
     
-  }
+  }  
 }
