@@ -11,3 +11,15 @@ class Anim {
     int interval;
   
 };
+
+// Check Interval
+
+bool CheckTime(unsigned long currentMillis, unsigned long previousMillis, int interval){
+
+  if ((currentMillis - previousMillis) > interval){
+    return true;
+  }
+
+  return false;
+  
+}
