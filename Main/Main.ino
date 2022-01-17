@@ -4,6 +4,8 @@
 
 // Assets
 #include "defaultmode.h"
+#include "dm_button_red.h"
+#include "dm_button_orange.h"
 
 //TFT_eSPI instance
 TFT_eSPI tft = TFT_eSPI();
@@ -18,12 +20,16 @@ TFT_eSprite dm_spr_frameTop = TFT_eSprite(&tft);
 TFT_eSprite dm_bg_frameTop = TFT_eSprite(&tft);
 TFT_eSprite dm_spr_frameBottom = TFT_eSprite(&tft);
 TFT_eSprite dm_bg_frameBottom = TFT_eSprite(&tft);
+TFT_eSprite dm_bg_button = TFT_eSprite(&tft);
 
 // Animation Elements
 
 // **Default Mode** //
 Anim dm_frameTop;
 Anim dm_frameBottom;
+Anim dm_button1;
+Anim dm_button2;
+Anim dm_button3;
 
 // Variables
 unsigned long currentMillis = 0;
@@ -42,8 +48,7 @@ void setup() {
   DM_InitializeAttributes();
 
   // Begin Default Mode animation sequence
-  DM_Loop();
- 
+  DM_Loop(); 
 }
 
 void loop() {  
@@ -57,22 +62,20 @@ void TFTSetup(){
 
   //Swap the color byte order when rendering
   tft.setSwapBytes(true);
-  
+    
 }
 
-void DrawBackgroundImage(int x, int y, const unsigned short IMAGE[]) {
+void DrawBackgroundImage(int x, int y, int w, int h, const unsigned short IMAGE[]) {
 
   // Clear screen & draw background image
-  tft.fillScreen(TFT_BLACK);
-  tft.pushImage(x, y, DISPLAY_WIDTH, DISPLAY_HEIGHT, IMAGE);
+  //tft.fillScreen(TFT_BLACK);
+  tft.pushImage(x, y, w, h, IMAGE);
       
 }
 
 void BlinkLED() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(500);                       // wait for a second
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)                   
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW 
 }
 
 /////////////////////
@@ -80,10 +83,29 @@ void BlinkLED() {
 /////////////////////
 
 // ***** DEFAULT MODE *** ////////////////////////////////////////////////////////////////
-// ***** DEFAULT MODE *** ////////////////////////////////////////////////////////////////
-// ***** DEFAULT MODE *** ////////////////////////////////////////////////////////////////
 
 void DM_InitializeAttributes(){
+
+// Button 1
+dm_button1.sizeX = 32;
+dm_button1.sizeY = 12;
+dm_button1.currentX = 211;
+dm_button1.currentY = 214;
+dm_button1.interval = 2000;
+
+// Button 2
+dm_button2.sizeX = 32;
+dm_button2.sizeY = 12;
+dm_button2.currentX = 245;
+dm_button2.currentY = 214;
+dm_button2.interval = 500;
+
+// Button 3
+dm_button3.sizeX = 32;
+dm_button3.sizeY = 12;
+dm_button3.currentX = 279;
+dm_button3.currentY = 214;
+dm_button3.interval = 750;
 
 // Frame Top
 dm_frameTop.sizeX = 8;
@@ -118,17 +140,97 @@ dm_frameBottom.interval = 20;
 // Begin Default Mode Loop
 void DM_Loop(){
 
-  DrawBackgroundImage(0, 0, defaultMode);
+  DrawBackgroundImage(0, 0, DISPLAY_WIDTH, DISPLAY_HEIGHT, defaultmode);
 
   while(true){
 
     currentMillis = millis();
     DM_FrameTop();
     DM_FrameBottom();
+    DM_Button1();
+    DM_Button2();
+    DM_Button3();
     
   }
    
 }
+
+
+void DM_Button1() {
+  
+  if (CheckTime(currentMillis, dm_button1.previousMillis, dm_button1.interval)){
+
+     if (dm_button1.isVisible) {
+      
+          DrawBackgroundImage(dm_button1.currentX, dm_button1.currentY, dm_button1.sizeX, dm_button1.sizeY, dm_button_red);
+          dm_button1.isVisible = false;
+          dm_button1.previousMillis = currentMillis;
+          
+     }
+    else {
+      
+      dm_bg_button.createSprite(dm_button1.sizeX, dm_button1.sizeY);
+      dm_bg_button.fillSprite(TFT_BLACK);
+      dm_bg_button.pushSprite(dm_button1.currentX, dm_button1.currentY);
+      dm_bg_button.deleteSprite();
+
+      dm_button1.previousMillis = currentMillis;
+      dm_button1.isVisible = true;
+    }
+  }
+    
+}
+
+void DM_Button2() {
+  
+  if (CheckTime(currentMillis, dm_button2.previousMillis, dm_button2.interval)){
+
+     if (dm_button2.isVisible) {
+      
+          DrawBackgroundImage(dm_button2.currentX, dm_button2.currentY, dm_button2.sizeX, dm_button2.sizeY, dm_button_orange);
+          dm_button2.isVisible = false;
+          dm_button2.previousMillis = currentMillis;
+          
+     }
+    else {
+      
+      dm_bg_button.createSprite(dm_button2.sizeX, dm_button2.sizeY);
+      dm_bg_button.fillSprite(TFT_BLACK);
+      dm_bg_button.pushSprite(dm_button2.currentX, dm_button2.currentY);
+      dm_bg_button.deleteSprite();
+
+      dm_button2.previousMillis = currentMillis;
+      dm_button2.isVisible = true;
+    }
+  }
+    
+}
+
+void DM_Button3() {
+  
+  if (CheckTime(currentMillis, dm_button3.previousMillis, dm_button3.interval)){
+
+     if (dm_button3.isVisible) {
+      
+          DrawBackgroundImage(dm_button3.currentX, dm_button3.currentY, dm_button3.sizeX, dm_button3.sizeY, dm_button_orange);
+          dm_button3.isVisible = false;
+          dm_button3.previousMillis = currentMillis;
+          
+     }
+    else {
+      
+      dm_bg_button.createSprite(dm_button3.sizeX, dm_button3.sizeY);
+      dm_bg_button.fillSprite(TFT_BLACK);
+      dm_bg_button.pushSprite(dm_button3.currentX, dm_button3.currentY);
+      dm_bg_button.deleteSprite();
+
+      dm_button3.previousMillis = currentMillis;
+      dm_button3.isVisible = true;
+    }
+  }
+    
+}
+
 
 // Frame Top
 void DM_FrameTop() {

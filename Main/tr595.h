@@ -9,7 +9,7 @@ class Anim {
     bool reverse = false;
     unsigned long previousMillis = 0;
     int interval;
-    int blinkDelay;
+    bool isVisible = true;
     
   
 };
