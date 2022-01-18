@@ -16,11 +16,14 @@ const int DISPLAY_HEIGHT = 240;
 
 // Sprites
 
+// **Default Mode** //
 TFT_eSprite dm_spr_frameTop = TFT_eSprite(&tft);
 TFT_eSprite dm_bg_frameTop = TFT_eSprite(&tft);
 TFT_eSprite dm_spr_frameBottom = TFT_eSprite(&tft);
 TFT_eSprite dm_bg_frameBottom = TFT_eSprite(&tft);
 TFT_eSprite dm_bg_button = TFT_eSprite(&tft);
+TFT_eSprite dm_spr_barGraph = TFT_eSprite(&tft);
+TFT_eSprite dm_bg_barGraph = TFT_eSprite(&tft);
 
 // Animation Elements
 
@@ -30,6 +33,7 @@ Anim dm_frameBottom;
 Anim dm_button1;
 Anim dm_button2;
 Anim dm_button3;
+Anim dm_bargraph1;
 
 // Variables
 unsigned long currentMillis = 0;
