@@ -10,6 +10,7 @@ class Anim {
     unsigned long previousMillis = 0;
     int interval;
     bool isVisible = true;
+    bool sequenceComplete = false;
     
   
 };
