@@ -27,8 +27,8 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="2.8284271"
-     inkscape:cx="131.34509"
-     inkscape:cy="123.92046"
+     inkscape:cx="151.14408"
+     inkscape:cy="129.22377"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
@@ -60,11 +60,41 @@
        id="rect11411"
        width="320"
        height="240"
-       x="1.999995"
-       y="-2"
+       x="5e-07"
+       y="5e-07"
        inkscape:export-filename="C:\Users\Nick\Desktop\defaultmode.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ff7b3a;fill-opacity:1"
+       x="310.776"
+       y="117.13"
+       id="text65741"><tspan
+         sodipodi:role="line"
+         id="tspan65739"
+         x="310.776"
+         y="117.13">64</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ff7b3a;fill-opacity:1"
+       x="310.776"
+       y="142.83"
+       id="text68299"><tspan
+         sodipodi:role="line"
+         id="tspan68297"
+         x="310.776"
+         y="142.83">32</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ff7b3a;fill-opacity:1"
+       x="311.4375"
+       y="168.53"
+       id="text82929"><tspan
+         sodipodi:role="line"
+         id="tspan82927"
+         x="311.4375"
+         y="168.53">16</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -350,6 +380,16 @@
          y="95.000328">ADMIN</tspan></text>
     <text
        xml:space="preserve"
+       style="font-size:5.33333px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#000000"
+       x="51.271667"
+       y="18.871998"
+       id="text117026-8"><tspan
+         sodipodi:role="line"
+         id="tspan117024-9"
+         x="51.271667"
+         y="18.871998">STATUS</tspan></text>
+    <text
+       xml:space="preserve"
        style="font-size:4.26666px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#000000;stroke-width:0.8"
        x="307.48053"
        y="28.565596"
@@ -579,5 +619,69 @@
          id="tspan195357"
          x="280.93066"
          y="198.99966">THETA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ff7b3a;fill-opacity:1"
+       x="91.656479"
+       y="214.616"
+       id="text3246"><tspan
+         sodipodi:role="line"
+         id="tspan3244"
+         x="91.656479"
+         y="214.616">SUBSPACE EMISSION SURVEY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std'"
+       x="91.880478"
+       y="222.64799"
+       id="text25631"><tspan
+         sodipodi:role="line"
+         id="tspan25629"
+         x="91.880478"
+         y="222.64799"
+         style="font-size:8px;fill:#ffffff">DEFAULT FWD SENSOR ARRAY CONFIGURATION ENABLED</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ff7b3a;fill-opacity:1"
+       x="65.615997"
+       y="168.562"
+       id="text32853"><tspan
+         sodipodi:role="line"
+         id="tspan32851"
+         x="65.615997"
+         y="168.562"
+         style="font-size:8px;fill:#ff7b3a;fill-opacity:1">16</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.33333px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std'"
+       x="112.07643"
+       y="136.29483"
+       id="text51149"><tspan
+         sodipodi:role="line"
+         id="tspan51147"
+         x="112.07643"
+         y="136.29483" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ff7b3a;fill-opacity:1"
+       x="65.615997"
+       y="142.87801"
+       id="text55091"><tspan
+         sodipodi:role="line"
+         id="tspan55089"
+         x="65.615997"
+         y="142.87801"
+         style="fill:#ff7b3a;fill-opacity:1">32</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ff7b3a;fill-opacity:1"
+       x="65.952003"
+       y="117.13"
+       id="text60161"><tspan
+         sodipodi:role="line"
+         id="tspan60159"
+         x="65.952003"
+         y="117.13"
+         style="fill:#ff7b3a;fill-opacity:1">64</tspan></text>
   </g>
 </svg>
