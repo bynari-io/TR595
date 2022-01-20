@@ -2,16 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="320px"
-   height="240px"
-   viewBox="0 0 320 240"
-   version="1.1"
-   id="SVGRoot"
-   sodipodi:docname="defaultmode.svg"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   inkscape:export-filename="C:\Users\Nick\Desktop\defaultmode.png"
-   inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
+   inkscape:export-xdpi="96"
+   inkscape:export-filename="C:\Users\Nick\Desktop\defaultmode.png"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="defaultmode.svg"
+   id="SVGRoot"
+   version="1.1"
+   viewBox="0 0 320 240"
+   height="240px"
+   width="320px"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,32 +27,41 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="2.8284271"
-     inkscape:cx="149.02276"
-     inkscape:cy="132.05219"
+     inkscape:cx="131.34509"
+     inkscape:cy="123.92046"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:window-x="1912"
      inkscape:window-y="438"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer4"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
      showguides="false" />
   <defs
-     id="defs21053" />
+     id="defs21053">
+    <linearGradient
+       id="linearGradient13314"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop13312" />
+    </linearGradient>
+  </defs>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="background"
-     style="opacity:1">
+     style="display:inline;opacity:1">
     <rect
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000088;stroke-width:0"
        id="rect11411"
        width="320"
        height="240"
-       x="4.494382e-07"
-       y="4.4036696e-07"
+       x="1.999995"
+       y="-2"
        inkscape:export-filename="C:\Users\Nick\Desktop\defaultmode.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
@@ -220,87 +229,87 @@
     <path
        id="rect266442"
        style="opacity:1;fill:#ff7b3a;fill-opacity:1;stroke:#000088;stroke-width:0"
-       d="M 87.5,80.000001 C 83.35786,80 80,83.357865 80,87.500001 v 8.43164 h 5.35156 V 105 H 90 v -10.449219 -7.05078 a 2.4999998,2.4999998 0 0 1 2.5,-2.5 h 3.25 v -5 H 90 Z" />
+       d="m 81.75,85.000001 c -4.14214,-10e-7 -7.5,3.357864 -7.5,7.5 v 8.431639 h 5.351562 V 110 H 84.25 v -10.449219 -7.05078 a 2.4999998,2.4999998 0 0 1 2.5,-2.5 H 90 v -5 h -5.75 z" />
     <path
        id="rect266442-5"
        style="fill:#ff7b3a;fill-opacity:1;stroke:#000088;stroke-width:0"
-       d="m 85.35156,165 v 9.06836 H 80 V 182.5 c 0,4.14213 3.35786,7.5 7.5,7.5 h 2.5 5.75 v -5 H 92.5 A 2.4999998,2.4999998 0 0 1 90,182.5 V 175.44922 165 Z" />
+       d="m 79.601562,170 v 9.06836 H 74.25 V 187.5 c 0,4.14213 3.35786,7.5 7.5,7.5 h 2.5 5.75 v -5 h -3.25 a 2.4999998,2.4999998 0 0 1 -2.5,-2.5 V 180.44922 170 Z" />
     <path
        id="rect282859"
        style="opacity:1;fill:#a23c3b;fill-opacity:1;stroke:#000088;stroke-width:0"
-       d="m 85.35156,106 v 5 H 90 v -5 z" />
+       d="m 79.601562,111 v 5 H 84.25 v -5 z" />
     <path
        id="rect282859-8"
        style="fill:#ff7b3a;fill-opacity:1;stroke:#000088;stroke-width:0"
-       d="m 85.35156,112 v 46 H 90 v -46 z" />
+       d="m 79.601562,117 v 46 H 84.25 v -46 z" />
     <path
        id="rect282859-0"
        style="fill:#a23c3b;fill-opacity:1;stroke:#000088;stroke-width:0"
-       d="m 85.35156,159 v 5 H 90 v -5 z" />
+       d="m 79.601562,164 v 5 H 84.25 v -5 z" />
     <rect
        style="opacity:1;fill:#ee4e00;fill-opacity:1;stroke:#000088;stroke-width:0"
        id="rect301435"
        width="4.3519993"
        height="24.699999"
-       x="80"
-       y="96.931999" />
+       x="74.25"
+       y="101.932" />
     <rect
        style="fill:#ee4e00;fill-opacity:1;stroke:#000088;stroke-width:0"
        id="rect301435-0"
        width="4.3519993"
        height="24.699999"
-       x="80"
-       y="122.632" />
+       x="74.25"
+       y="127.632" />
     <rect
        style="fill:#ee4e00;fill-opacity:1;stroke:#000088;stroke-width:0"
        id="rect301435-1"
        width="4.3519993"
        height="24.699999"
-       x="80"
-       y="148.332" />
+       x="74.25"
+       y="153.332" />
     <path
        id="rect266442-0"
        style="fill:#ff7b3a;fill-opacity:1;stroke:#000088;stroke-width:0"
-       d="m 301.375,80.000001 c 4.14214,-10e-7 7.5,3.357864 7.5,7.5 v 8.43164 h -5.35156 V 105 H 298.875 v -10.449219 -7.05078 a 2.4999998,2.4999998 0 0 0 -2.5,-2.5 h -3.25 v -5 h 5.75 z" />
+       d="m 300.25,85.000001 c 4.14214,-10e-7 7.5,3.357864 7.5,7.5 v 8.431639 h -5.35156 V 110 H 297.75 v -10.449219 -7.05078 a 2.4999998,2.4999998 0 0 0 -2.5,-2.5 H 292 v -5 h 5.75 z" />
     <path
        id="rect266442-5-8"
        style="fill:#ff7b3a;fill-opacity:1;stroke:#000088;stroke-width:0"
-       d="m 303.52344,165 v 9.06836 H 308.875 V 182.5 c 0,4.14213 -3.35786,7.5 -7.5,7.5 h -2.5 -5.75 v -5 h 3.25 a 2.4999998,2.4999998 0 0 0 2.5,-2.5 V 175.44922 165 Z" />
+       d="m 302.39844,170 v 9.06836 H 307.75 V 187.5 c 0,4.14213 -3.35786,7.5 -7.5,7.5 h -2.5 -5.75 v -5 h 3.25 a 2.4999998,2.4999998 0 0 0 2.5,-2.5 V 180.44922 170 Z" />
     <path
        id="rect282859-5"
        style="fill:#a23c3b;fill-opacity:1;stroke:#000088;stroke-width:0"
-       d="m 303.52344,106 v 5 H 298.875 v -5 z" />
+       d="m 302.39844,111 v 5 H 297.75 v -5 z" />
     <path
        id="rect282859-8-7"
        style="fill:#ff7b3a;fill-opacity:1;stroke:#000088;stroke-width:0"
-       d="m 303.52344,112 v 46 H 298.875 v -46 z" />
+       d="m 302.39844,117 v 46 H 297.75 v -46 z" />
     <path
        id="rect282859-0-3"
        style="fill:#a23c3b;fill-opacity:1;stroke:#000088;stroke-width:0"
-       d="m 303.52344,159 v 5 H 298.875 v -5 z" />
+       d="m 302.39844,164 v 5 H 297.75 v -5 z" />
     <rect
        style="fill:#ee4e00;fill-opacity:1;stroke:#000088;stroke-width:0"
        id="rect301435-3"
        width="4.3519993"
        height="24.699999"
-       x="-308.875"
-       y="96.931999"
+       x="-307.75"
+       y="101.932"
        transform="scale(-1,1)" />
     <rect
        style="fill:#ee4e00;fill-opacity:1;stroke:#000088;stroke-width:0"
        id="rect301435-0-0"
        width="4.3519993"
        height="24.699999"
-       x="-308.875"
-       y="122.632"
+       x="-307.75"
+       y="127.632"
        transform="scale(-1,1)" />
     <rect
        style="fill:#ee4e00;fill-opacity:1;stroke:#000088;stroke-width:0"
        id="rect301435-1-4"
        width="4.3519993"
        height="24.699999"
-       x="-308.875"
-       y="148.332"
+       x="-307.75"
+       y="153.332"
        transform="scale(-1,1)" />
   </g>
   <g
@@ -431,5 +440,144 @@
   <g
      inkscape:groupmode="layer"
      id="layer4"
-     inkscape:label="Animation" />
+     inkscape:label="Animation">
+    <rect
+       style="opacity:1;fill:#ff7b3a;fill-opacity:1;stroke:#000000;stroke-width:0"
+       id="rect15019"
+       width="23"
+       height="9.9999981"
+       x="92"
+       y="190" />
+    <rect
+       style="fill:#ee4e00;fill-opacity:1;stroke:#000000;stroke-width:0"
+       id="rect15019-7"
+       width="23"
+       height="9.9999981"
+       x="117"
+       y="190" />
+    <rect
+       style="fill:#a23c3b;fill-opacity:1;stroke:#000000;stroke-width:0"
+       id="rect15019-3"
+       width="23"
+       height="9.9999981"
+       x="141.99998"
+       y="190" />
+    <rect
+       style="fill:#ff7b3a;fill-opacity:1;stroke:#000000;stroke-width:0"
+       id="rect15019-7-3"
+       width="23"
+       height="9.9999981"
+       x="166.99998"
+       y="190" />
+    <rect
+       style="fill:#a955a9;fill-opacity:1;stroke:#000000;stroke-width:0"
+       id="rect15019-5"
+       width="23"
+       height="9.9999981"
+       x="191.99998"
+       y="190" />
+    <rect
+       style="fill:#ee4e00;fill-opacity:1;stroke:#000000;stroke-width:0"
+       id="rect15019-7-37"
+       width="23"
+       height="9.9999981"
+       x="216.99998"
+       y="190" />
+    <rect
+       style="fill:#ff7b3a;fill-opacity:1;stroke:#000000;stroke-width:0"
+       id="rect15019-3-3"
+       width="23"
+       height="9.9999981"
+       x="241.99998"
+       y="190" />
+    <rect
+       style="fill:#a23c3b;fill-opacity:1;stroke:#000000;stroke-width:0"
+       id="rect15019-7-3-0"
+       width="23"
+       height="9.9999981"
+       x="267"
+       y="190" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.33333px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std'"
+       x="105.445"
+       y="199.00034"
+       id="text168786"><tspan
+         sodipodi:role="line"
+         id="tspan168784"
+         x="105.445"
+         y="199.00034">ALPHA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.33333px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std'"
+       x="132.61066"
+       y="198.99966"
+       id="text173049"><tspan
+         sodipodi:role="line"
+         id="tspan173047"
+         x="132.61066"
+         y="198.99966"
+         rotate="0 0 0 0 0"
+         style="font-size:5.33333px">BETA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.33333px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std'"
+       x="153.57332"
+       y="198.925"
+       id="text179133"><tspan
+         sodipodi:role="line"
+         id="tspan179131"
+         x="153.57332"
+         y="198.925">GAMMA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.33333px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std'"
+       x="181.52266"
+       y="198.99966"
+       id="text187637"><tspan
+         sodipodi:role="line"
+         id="tspan187635"
+         x="181.52266"
+         y="198.99966">DELTA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.33333px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std'"
+       x="202.90666"
+       y="198.925"
+       id="text193361"><tspan
+         sodipodi:role="line"
+         id="tspan193359"
+         x="202.90666"
+         y="198.925">EPSILON</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.33333px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std'"
+       x="233.00531"
+       y="198.99966"
+       id="text194127"><tspan
+         sodipodi:role="line"
+         id="tspan194125"
+         x="233.00531"
+         y="198.99966">ZETA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.33333px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std'"
+       x="259.38666"
+       y="198.99966"
+       id="text194671"><tspan
+         sodipodi:role="line"
+         id="tspan194669"
+         x="259.38666"
+         y="198.99966">ETA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.33333px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std'"
+       x="280.93066"
+       y="198.99966"
+       id="text195359"><tspan
+         sodipodi:role="line"
+         id="tspan195357"
+         x="280.93066"
+         y="198.99966">THETA</tspan></text>
+  </g>
 </svg>
