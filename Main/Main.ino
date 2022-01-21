@@ -6,6 +6,19 @@
 #include "defaultmode.h"
 #include "dm_button_red.h"
 #include "dm_button_orange.h"
+#include "dm_line1_orange.h"
+#include "dm_line2_orange.h"
+#include "dm_line3_orange.h"
+#include "dm_line4_orange.h"
+#include "dm_line5_orange.h"
+#include "dm_line6_orange.h"
+#include "dm_line1_white.h"
+#include "dm_line2_white.h"
+#include "dm_line3_white.h"
+#include "dm_line4_white.h"
+#include "dm_line5_white.h"
+#include "dm_line6_white.h"
+
 
 //TFT_eSPI instance
 TFT_eSPI tft = TFT_eSPI();
@@ -24,6 +37,7 @@ TFT_eSprite dm_bg_frameBottom = TFT_eSprite(&tft);
 TFT_eSprite dm_bg_button = TFT_eSprite(&tft);
 TFT_eSprite dm_spr_barGraph = TFT_eSprite(&tft);
 TFT_eSprite dm_bg_barGraph = TFT_eSprite(&tft);
+TFT_eSprite dm_bg_scrollText = TFT_eSprite(&tft);
 
 // Animation Elements
 
@@ -41,6 +55,13 @@ Anim dm_bargraph5;
 Anim dm_bargraph6;
 Anim dm_bargraph7;
 Anim dm_bargraph8;
+Anim dm_line1;
+Anim dm_line2;
+Anim dm_line3;
+Anim dm_line4;
+Anim dm_line5;
+Anim dm_line6;
+
 
 // Variables
 unsigned long currentMillis = 0;
@@ -96,6 +117,36 @@ void ShowLED() {
 // ***** DEFAULT MODE *** ////////////////////////////////////////////////////////////////
 
 void DM_InitializeAttributes(){
+
+// Text Line 1
+dm_line1.sizeX = 171;    // Size attributes will be used for the entire sequence
+dm_line1.sizeY = 4;
+dm_line1.currentX = 70;
+dm_line1.currentY = 8;
+dm_line1.interval = 500; // This interval will be used for the entire sequence
+dm_line1.sCounter = 0;   // This counter will be used for the entire sequence
+dm_line1.previousMillis = 0;   // This will be used for the entire sequence
+
+
+// Text Line 2
+dm_line2.currentX = 70;
+dm_line2.currentY = 13;
+
+// Text Line 3
+dm_line3.currentX = 70;
+dm_line3.currentY = 18;
+
+//Text Line 4
+dm_line4.currentX = 70;
+dm_line4.currentY = 23;
+
+// Text Line 5
+dm_line5.currentX = 70;
+dm_line5.currentY = 28;
+
+//Text Line 6
+dm_line6.currentX = 70;
+dm_line6.currentY = 33;
 
 // Bargraph 1
 dm_bargraph1.sizeX = 23;
@@ -257,9 +308,103 @@ void DM_Loop(){
     DM_Bargraph6();
     DM_Bargraph7();
     DM_Bargraph8();
+    DM_ScrollingText();
     
   }
    
+}
+
+void DM_ScrollingText(){
+
+  if (CheckTime(currentMillis, dm_line1.previousMillis, dm_line1.interval)) {
+
+    if (dm_line1.sCounter == 0){
+      // Draw first line
+      DrawBackgroundImage(dm_line1.currentX, dm_line1.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line1_orange);
+
+    }
+
+    if (dm_line1.sCounter == 1){
+      // Draw second line
+      DrawBackgroundImage(dm_line2.currentX, dm_line2.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line2_orange);
+
+    }
+
+    if (dm_line1.sCounter == 2){
+      // Draw third line
+      DrawBackgroundImage(dm_line3.currentX, dm_line3.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line3_orange);
+
+    }
+
+    if (dm_line1.sCounter == 3){
+      // Draw fourth line
+      DrawBackgroundImage(dm_line4.currentX, dm_line4.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line4_orange);
+
+    }
+    
+    if (dm_line1.sCounter == 4){
+      // Draw fifth line
+      DrawBackgroundImage(dm_line5.currentX, dm_line5.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line5_orange);
+
+    }
+    
+    if (dm_line1.sCounter == 5){
+      // Draw sixth line
+      DrawBackgroundImage(dm_line6.currentX, dm_line6.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line6_orange);
+
+    }
+
+    if (dm_line1.sCounter == 6){
+      // highlight first and second lines
+      DrawBackgroundImage(dm_line1.currentX, dm_line1.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line1_white);
+      DrawBackgroundImage(dm_line2.currentX, dm_line2.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line2_white);
+
+    }
+
+    if (dm_line1.sCounter == 7){
+      // restore first and second lines, highlight third and fourth lines
+      DrawBackgroundImage(dm_line1.currentX, dm_line1.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line1_orange);
+      DrawBackgroundImage(dm_line2.currentX, dm_line2.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line2_orange);
+      
+      DrawBackgroundImage(dm_line3.currentX, dm_line3.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line3_white);
+      DrawBackgroundImage(dm_line4.currentX, dm_line4.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line4_white);
+
+    }
+
+    if (dm_line1.sCounter == 8){
+      // restore third and fourth lines, highlight fifth and sixth lines
+      DrawBackgroundImage(dm_line3.currentX, dm_line3.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line3_orange);
+      DrawBackgroundImage(dm_line4.currentX, dm_line4.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line4_orange);
+      
+      DrawBackgroundImage(dm_line5.currentX, dm_line5.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line5_white);
+      DrawBackgroundImage(dm_line6.currentX, dm_line6.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line6_white);
+
+    }
+
+    if (dm_line1.sCounter == 9){
+      // restore fifth and sixth lines
+      DrawBackgroundImage(dm_line5.currentX, dm_line5.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line5_orange);
+      DrawBackgroundImage(dm_line6.currentX, dm_line6.currentY, dm_line1.sizeX, dm_line1.sizeY, dm_line6_orange);
+
+    }
+
+    if (dm_line1.sCounter == 10){
+      // Erase all text
+      dm_bg_scrollText.createSprite(174, 31);
+      dm_bg_scrollText.fillSprite(TFT_BLACK);
+      dm_bg_scrollText.pushSprite(68, 7);
+      dm_bg_scrollText.deleteSprite();
+
+      // Reset counter to end sequence
+      dm_line1.sCounter = 0;
+      dm_line1.previousMillis = currentMillis;
+      return;
+    }
+    
+    dm_line1.sCounter++;
+    dm_line1.previousMillis = currentMillis;
+  }
+  
 }
 
 void DM_Bargraph1(){

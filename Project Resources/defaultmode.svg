@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="151.14408"
-     inkscape:cy="129.22377"
+     inkscape:zoom="3.8927495"
+     inkscape:cx="149.63717"
+     inkscape:cy="143.47186"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
@@ -38,7 +38,8 @@
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
-     showguides="false" />
+     showguides="false"
+     inkscape:lockguides="true" />
   <defs
      id="defs21053">
     <linearGradient
@@ -628,18 +629,7 @@
          sodipodi:role="line"
          id="tspan3244"
          x="91.656479"
-         y="214.616">SUBSPACE EMISSION SURVEY</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:8px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std'"
-       x="91.880478"
-       y="222.64799"
-       id="text25631"><tspan
-         sodipodi:role="line"
-         id="tspan25629"
-         x="91.880478"
-         y="222.64799"
-         style="font-size:8px;fill:#ffffff">DEFAULT FWD SENSOR ARRAY CONFIGURATION ENABLED</tspan></text>
+         y="214.616">SUBSPACE FIELD SCAN 01A</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:8px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ff7b3a;fill-opacity:1"
@@ -683,5 +673,102 @@
          x="65.952003"
          y="117.13"
          style="fill:#ff7b3a;fill-opacity:1">64</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.3918px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ee4e00;fill-opacity:1;stroke-width:1.01096"
+       x="243.73428"
+       y="11.829599"
+       id="text8468"
+       inkscape:export-filename="C:\Users\Nick\Desktop\New folder\dm_line1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="scale(0.98939439,1.0107193)"><tspan
+         sodipodi:role="line"
+         id="tspan8466"
+         x="243.73427"
+         y="11.829599"
+         style="text-align:end;text-anchor:end;fill:#ee4e00;fill-opacity:1;stroke-width:1.01096">6210   55984951621   3   5519651   2213   6209   98721   75169   54982    987   11236   2351   9546    98751   6544   35</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.39761px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ee4e00;fill-opacity:1;stroke-width:1.01205"
+       x="243.86615"
+       y="31.651579"
+       id="text8468-0"
+       inkscape:export-filename="C:\Users\Nick\Desktop\New folder\dm_line5.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="scale(0.99046116,1.0096307)"><tspan
+         sodipodi:role="line"
+         id="tspan8466-2"
+         x="243.86615"
+         y="31.651579"
+         style="text-align:end;text-anchor:end;fill:#ee4e00;fill-opacity:1;stroke-width:1.01205">4897         99422094                  51       71       19     4222   74205         92    442     1135   7575   3333    74656   8521   01</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.39441px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ee4e00;fill-opacity:1;stroke-width:1.01145"
+       x="243.61629"
+       y="16.784704"
+       id="text8468-7"
+       inkscape:export-filename="C:\Users\Nick\Desktop\New folder\dm_line2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="scale(0.98987427,1.0102293)"><tspan
+         sodipodi:role="line"
+         id="tspan8466-6"
+         x="243.61629"
+         y="16.784704"
+         style="text-align:end;text-anchor:end;fill:#ee4e00;fill-opacity:1;stroke-width:1.01145">8812                 9721   1       98716     827       21         42     7256         75      12       888       32       95          91       21   78</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.39121px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ee4e00;fill-opacity:1;stroke-width:1.01085"
+       x="243.76079"
+       y="21.72118"
+       id="text8468-7-2"
+       inkscape:export-filename="C:\Users\Nick\Desktop\New folder\dm_line3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="scale(0.9892868,1.0108292)"><tspan
+         sodipodi:role="line"
+         id="tspan8466-6-2"
+         x="243.76079"
+         y="21.72118"
+         style="text-align:end;text-anchor:end;fill:#ee4e00;fill-opacity:1;stroke-width:1.01085">4100             321155   8   1123315       52     766   51142     7256   98721      71     9871   9116     164      8452     733     8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.39474px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ee4e00;fill-opacity:1;stroke-width:1.01152"
+       x="243.6012"
+       y="36.584461"
+       id="text8468-7-2-2"
+       inkscape:export-filename="C:\Users\Nick\Desktop\New folder\dm_line6.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="scale(0.98993568,1.0101666)"><tspan
+         sodipodi:role="line"
+         id="tspan8466-6-2-3"
+         x="243.6012"
+         y="36.584461"
+         style="text-align:end;text-anchor:end;fill:#ee4e00;fill-opacity:1;stroke-width:1.01152">1776             321155   8   1123315       52     766   51142     7256   98721      71     9871   9116     164      8452     733     8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.39365px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';fill:#ee4e00;fill-opacity:1;stroke-width:1.01131"
+       x="243.6505"
+       y="26.679697"
+       id="text8468-7-2-3"
+       inkscape:export-filename="C:\Users\Nick\Desktop\New folder\dm_line4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="scale(0.98973515,1.0103713)"><tspan
+         sodipodi:role="line"
+         id="tspan8466-6-2-9"
+         x="243.6505"
+         y="26.679697"
+         style="text-align:end;text-anchor:end;fill:#ee4e00;fill-opacity:1;stroke-width:1.01131">5112   81999815666   4             11   9655   4002       915         40         63    523     0015       44         9        394     000   45</tspan></text>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0"
+       id="rect98574"
+       width="174"
+       height="31"
+       x="68"
+       y="7.0000005" />
   </g>
 </svg>
